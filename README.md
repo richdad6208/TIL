@@ -1,5 +1,6 @@
 # TIL
 당일 배운 지식들을 정리하는 곳입니다.
+---
 ## 23.07.21
 - backend
   1) multer middleware, form 데이터 받기
@@ -12,6 +13,7 @@
   1) flex을 활용한 레이아웃
   2) 개발자 도구 중 마우스커서를 활용한 오류탐색 (z-index)
   3) 어려웠던 점: fullpage.js를 사용할 때 section의 크기를 100vh를 주었음에도 불구하고 100vh가 넘어가는 현상이 발생함. 이유를 찾아봐야하겠음
+---
 ## 23.07.22
   - backend
     1) multer middleware로 user profile photo upload
