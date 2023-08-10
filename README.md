@@ -3,7 +3,7 @@
 ## 23.08.10
   - 니꼴라스 백엔드 수업
     -웹팩으로 src 폴더의 client 폴더 내 js파일, css파일 외부로 추출.
-    -babel cli로 백엔드 자바스크립트 언어 호환성 증가.  webpack developement mode에서 build 모드로 전환
+    -babel cli로 백엔드 자바스크립트 언어 호환성 증가.  webpack developement mode에서 build 모드로 전환  
       -여기서 development mode는 개발할 때 모드로 최신언어를 쓰면서 작업할 수 있게 해주고,  build 모드는 호환성을 늘리기 위해 구식버전으로 낮추고, 최대한 압축해준다.
       -build mode로 파일들을 변환하고 서버를 작동시켜 보니 속도가 엄청 빨라서 기분이 좋았다.  이래서 속도와 사용자경험이 큰 상관관계가 있다는 것이 다시금 느껴졌다.
     -webpack build 모드에서 src/client 폴더 내 css 파일이 외부의 assets 파일 속으로 들어가기는 하지만, 압축이 되지 않는다. 이런 저런 시도를 해봐도 되지 않는다.
