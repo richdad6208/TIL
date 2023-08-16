@@ -5,7 +5,7 @@
     - aws s3 buket에 정상적으로 업데이트 완료하였다. heroku online 때 업로드는 aws s3 buket, 로컬 환경일때 업로드는 upload/파일로 분산시켰다.
     - 아직 comment 부분, 비디오 업로드 부분이 남았다. 비디오 업로드는 나중에 강의를 제작해서 홈페이지에 올릴 때 쓸만할 것 같다.
   + WORDFLEX
-    - 환경변수 .env 파일의 변수가 참조가 안되었다. 알고보니 import dotenv 선언의 위치를 제일 위로 올려주면서 해결하였다.
+    - 환경변수 .env 파일의 변수가 참조가 안되었다. 알고보니 server.js 에서 import dotenv 선언의 위치가 참조하는 파일 import위치보다 낮아서그랬다.  dotenv 선언을 제일 위로 올려주면서 해결하였다.
     - 몽고DB 아틀라스에 연결을 완료하였다.
     - 회원가입 기능을 만들고, form method="POST"로 전송하려고 하는데, 자꾸 morgan 메세지에서 get이 떴다.
       app.use(express.urlencoded({extend:true}))의 위치를 조절하니까 정상작동 하였다.
