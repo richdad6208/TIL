@@ -1,5 +1,20 @@
 # TIL
 당일 배운 지식들을 정리하는 곳입니다
+## 23.08.16 
+  - 니꼴라스 백엔드 수업
+    - aws s3 buket에 정상적으로 업데이트 완료하였다. heroku online 때 업로드는 aws s3 buket, 로컬 환경일때 업로드는 upload/파일로 분산시켰다.
+    - 아직 comment 부분, 비디오 업로드 부분이 남았다. 비디오 업로드는 나중에 강의를 제작해서 홈페이지에 올릴 때 쓸만할 것 같다.
+  + WORDFLEX
+    - 환경변수 .env 파일의 변수가 참조가 안되었다. 알고보니 import dotenv 선언의 위치를 제일 위로 올려주면서 해결하였다.
+    - 몽고DB 아틀라스에 연결을 완료하였다.
+    - 회원가입 기능을 만들고, form method="POST"로 전송하려고 하는데, 자꾸 morgan 메세지에서 get이 떴다.
+      app.use(express.urlencoded({extend:true}))의 위치를 조절하니까 정상작동 하였다.
+  + 엘리스 수업
+    - window.scrollTo()는 스크롤을 움직여줌
+    - xxx.offsetTop => 선택된 영역에서 상단까지의 거리
+    - 이미지 슬라이드를 노드 선택과 xxx.animation으로 하였다.
+    - 고생했던 오류: xxx.style.transform = "scale(1);" <= 이부분 ; 위치 오류
+    - node 선택시 firstChild가 아니라 firstElementChild이다. 
 ## 23.08.12
   - 니꼴라스 백엔드 수업
     - heroku 배포 db 몽고 atlas 연결완료 뿌듯하였다.
