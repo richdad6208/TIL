@@ -1,5 +1,19 @@
 # TIL
 당일 배운 지식들을 정리하는 곳입니다
+## 23.08.17
+  - 니꼴라스 백엔드 수업
+    - aws s3 buket에 파일을 나눠서 업로드하려고 하였다. image, video.
+      ```javascript
+      const videoUpload = s3({
+        bucket: "richdad6208/image" //이부분에서 오류가 발생했다.
+      //갖가지 구글링 끝에 결국
+        key: function (req, file, cb) { //cb 부분이 파일명으로 들어간다. 
+      const fileName = Date.now() //이부분은 랜덤한 숫자를 주기위함 + file.originalname;
+      const fullPath = `image/${fileName}`
+      cb(null, fullPath); 
+      }
+      }) //고생 끝에 해결한 오류라서 너무 기뻤다.
+      ``` 
 ## 23.08.16 
   - 니꼴라스 백엔드 수업
     - aws s3 buket에 정상적으로 업데이트 완료하였다. heroku online 때 업로드는 aws s3 buket, 로컬 환경일때 업로드는 upload/파일로 분산시켰다.
