@@ -8,7 +8,7 @@
         bucket: "richdad6208/image" //이부분에서 오류가 발생했다.
       //갖가지 구글링 끝에 결국
         key: function (req, file, cb) { //cb 부분이 파일명으로 들어간다. 
-      const fileName = Date.now() //이부분은 랜덤한 숫자를 주기위함 + file.originalname;
+      const fileName = Date.now() //이부분은 랜덤한 숫자를 주기위함// + file.originalname;
       const fullPath = `image/${fileName}`
       cb(null, fullPath); 
       }
